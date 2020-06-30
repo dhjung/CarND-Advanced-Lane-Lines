@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./output_images/binary.jpg "Binary Example"
+[image1]: ./output_images/binary.png "Binary Example"
 [image2]: ./output_images/transform.png "Transform"
 [image3]: ./output_images/lanepixel.png "Warp Example"
 [image4]: ./output_images/pipeline.png "Output"
@@ -73,13 +73,11 @@ By using perspective transformed image, I identified lane-line pixels and fit th
 
 I used the function 'measure_curvature_real' with constant which calculating meters per pixel in x and y dimension to change the unit from pixel to real world (meter). In addition, I utilized image's horizontal half size with the difference between left and right lane-line pixels to determine the vechicle position with respect to center. If the difference is larger than zero, the vehicle is on the right from the center and the difference is less than zero when the vehicle is on the left.
 
-![alt text][image4]
-
 #### Example image of the result plotted back down onto the road
 
 I implemented all the step in the class 'Line' with function 'process_image' in my code. I used this class in order to save previous image frame's fit information in order to soften the polynomials between the lane lines as well as lane detection. I initialized 'Line' class with size one for a single image. Here is an example of my result on a test image:
 
-![alt text][image5]
+![alt text][image4]
 
 ---
 
